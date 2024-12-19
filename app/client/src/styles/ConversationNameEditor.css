@@ -1,0 +1,48 @@
+/* Create a new file: src/styles/ConversationNameEditor.css */
+
+.name-editor-input {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #374151; /* gray-700 */
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    background-color: #1f2937; /* gray-800 */
+    color: #f3f4f6; /* gray-100 */
+    width: 100%;
+}
+
+.name-editor-input:focus {
+    outline: none;
+    border-color: #3b82f6; /* blue-500 */
+    box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.1);
+}
+
+.name-editor-button {
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    background-color: #1f2937; /* gray-800 */
+    transition: background-color 0.2s;
+}
+
+.name-editor-button:hover {
+    background-color: #374151; /* gray-700 */
+}
+
+.name-display {
+    font-size: 0.875rem;
+    color: #f3f4f6; /* gray-100 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.name-edit-button {
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    background-color: #1f2937; /* gray-800 */
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.name-editor-container:hover .name-edit-button {
+    opacity: 1;
+}

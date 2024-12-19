@@ -1,0 +1,104 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2c2c2c;
+  z-index: 10;
+  min-height: 60px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-buttons button {
+  padding: 5px 10px;
+  background-color: #4a4a4a;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-buttons button:hover {
+  background-color: #4a4a4a;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  height: calc(100vh - 60px);
+}
+
+.resize-panel-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.resize-divider {
+  width: 6px;
+  height: 100%;
+  cursor: col-resize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.resize-divider:hover,
+.resize-divider.dragging {
+  background-color: #4a4a4a;
+}
+
+/* Container styling */
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.dashboard {
+  overflow: auto;
+  height: 100%;
+}
+
+/* Modal styling */
+.modal-content {
+  color: #ffffff;
+}
+
+/* Form elements base styling */
+input, textarea, select {
+  color: #ffffff;
+  outline: none;
+}
+
+/* Base scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+}

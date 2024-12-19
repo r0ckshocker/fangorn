@@ -1,0 +1,17 @@
+click
+requests
+python-dotenv
+boto3
+certifi
+urllib3
+python-nmap
+beautifulsoup4
+scapy
+python-owasp-zap-v2.4 
+datadog
+anthropic
+pdfplumber
+tqdm
+backoff
+ratelimit
+pymongo
