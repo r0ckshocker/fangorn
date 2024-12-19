@@ -1,0 +1,17 @@
+# Use python:3.9 as a base
+FROM public.ecr.aws/lambda/python:3.9
+# COPY --from=afs-bin /opt/app ${LAMBDA_TASK_ROOT}
+RUN yum install binutils zip -y
+
+# Copy requirements.txt into the working directory
+COPY requirements.txt .
+RUN  pip3 install -r requirements.txt --target "${LAMBDA_TASK_ROOT}"
+
+ADD handlers ${LAMBDA_TASK_ROOT}
+
+## now in the make archive command
+# RUN cd ${LAMBDA_TASK_ROOT} && zip -r9 ../../lambda.zip .
+# WORKDIR /
+
+
+
